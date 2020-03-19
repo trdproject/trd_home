@@ -10,8 +10,12 @@ class Home extends CI_Controller {
 	
 	public function index()
 	{
-		$data['index'] = $this->Model_user->Mindex();
-		$this->load->view('user/index', $data);
+		
+		$data = array(
+						'index' => $this->Model_user->Mindex(),
+						'isi'	=> 'user/index'
+					);
+		$this->load->view('user/layout/wrapper',$data);
 
 	}
 

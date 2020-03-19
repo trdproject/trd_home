@@ -1,7 +1,7 @@
 <?php
-require ('header-top.php');
-require ('header.php');
+require ('css.php');
+require ('header_top.php');
 require ('content.php');
-require ('footer.php')
-
+require ('footer.php');
+require ('skrip.php');
 ?>
